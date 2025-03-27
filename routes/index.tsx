@@ -1,7 +1,7 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { FreshContext } from "$fresh/src/server/mod.ts";
 import { getBitcoin } from "../utils/api.ts";
-import { ItemsCollection } from "../utils/database.ts";
+import ItemsCollection from "../utils/database.ts";
 import { Items, ItemsModel } from "../utils/type.ts";
 
 export const handler:Handlers = {

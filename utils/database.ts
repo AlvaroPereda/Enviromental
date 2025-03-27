@@ -9,4 +9,6 @@ await client.connect()
 console.log("Conectado a mongodb")
 
 const db = client.db("A")
-export const ItemsCollection = db.collection<ItemsModel>("items")
+const ItemsCollection = db.collection<ItemsModel>("items")
+
+export default ItemsCollection;
