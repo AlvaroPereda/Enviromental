@@ -2,6 +2,7 @@ import { MongoClient } from "mongodb"
 import { ItemsModel } from "./type.ts";
 
 const url = Deno.env.get("MONGO_URL")
+console.log("URL de MongoDB:", url); // Verifica la URL
 if(!url) throw new Error("con MONGO_URL")
 
 const client = new MongoClient(url)
