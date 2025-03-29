@@ -1,4 +1,4 @@
-import {MongoClient} from "mongodb"
+import { MongoClient } from "mongodb"
 import { ItemsModel } from "./type.ts";
 
 const url = Deno.env.get("MONGO_URL")
